@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-title" content="MeetingA"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <link rel="stylesheet" href="css/control.css">
+        <script src="https://use.fontawesome.com/c19e88a826.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+    </head>
+    <body id="body">
+        <div id="top">
+            <div id="timer">
+                <div class="mini-clock">
+                    <h3 id="timeTitle">Set Time</h3>
+                    <input type="number" name="hr" value="00" id="hour"/>
+                    <label for="id1">Hours</label>
+                    <input type="number" name="min" value="00" id="min"/>
+                    <label for="id1">Mins</label>
+                </div>
+            </div>
+            <div id="agenda">
+                <input type="text" name="agenda" value="Agenda" placeholder="Agenda" id="inputAgenda">
+            </div>
+        </div>
+        <div id="bottom">
+            <button type="button" id="slow" class="shadow slow">Too Slow</button>
+            <button type="button" id="sent" class="shadow slow"><i class="fa fa-check fa-2x" aria-hidden="true"></i></button>
+        </div>
+    
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+        <script src="javascripts/control.js"></script>
+    </body>
+    
+</html>

@@ -1,0 +1,151 @@
+body#body{
+    height: 100vh; 
+    background-color: #675E79;
+
+    background: -webkit-linear-gradient(left top, #675E79,  #D0A0A1 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #675E79,  #D0A0A1 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #675E79,  #D0A0A1 ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #675E79,  #D0A0A1 ); /* Standard syntax (must be last) */
+}
+
+
+h3#timeTitle{
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+input#inputAgenda{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    width: 60%;
+    font-size: 1.65em;
+    background-color:transparent;
+    border: none;
+    border-bottom: 1px solid #fff;    
+    color: #fff;
+}
+
+label{
+    display: inline-block;
+}
+
+input#min, input#hour{
+    font-size: 20px;
+    background-color: transparent;
+    color: #fff;
+    width: 20%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+.mini-clock{
+    padding-top: 60px;
+    text-align: center;
+}
+
+
+#top{
+    width: 100vw;
+    height: 70vh;
+    background-color: transparent;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff;
+}
+
+
+#bottom{
+    background-color: transparent;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.fa-4x{
+    color: #fff;
+}
+
+.slow{
+    display: block;
+    background-color: transparent;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+
+#timer{
+    
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#agenda{
+     height: 50%;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.shadow{
+    box-shadow: 0 0 20px #675E79;
+    -webkit-box-shadow: 0 0 20px  #675E79;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-slow{
+    background-color: #282044;
+    color: #FEC722;
+    width: 70%;
+
+    
+
+    /*191b3e  + e6312e*/
+    /*FEC722 + 282044*/
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 480px) {
+
+body#body{
+    display: flex;
+}
+    
+#top{
+    width: 70%;
+    height: 100vh;
+}
+
+#bottom{
+    flex: 1;
+    height: 100vh;
+}
+
+.slow{
+        width: 15vw;
+        height: 15vw;
+    }
+}
+
+

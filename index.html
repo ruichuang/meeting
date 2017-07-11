@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/flipclock.css">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div id="agenda"><h3 id="text">Let's make this on time!</h3></div>
+            <div class="clock"></div>
+        </div>
+
+        <div id="alertWindow">
+            <div class="wrapper">
+                <div class=fakeMenu>
+                    <div class="fakeButtons fakeClose"></div>
+                    <div class="fakeButtons fakeMinimize"></div>
+                    <div class="fakeButtons fakeZoom"></div>
+                </div>
+                <div class="fakeScreen">
+                    <p class="line1">&#91;&nbsp;&ldquo;Hey guys.&rdquo;,<span class="cursor1">_</span></p>
+                    <p class="line2">&nbsp;&nbsp;&ldquo;We are running too slow!&rdquo;,<span class="cursor2">_</span></p>
+                    <p class="line3">&nbsp;&nbsp;&ldquo;Let's move on!&rdquo;&nbsp;&#93;<span class="cursor3">_</span></p>
+                    <p class="line4">><span class="cursor4">_</span></p>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>    
+    <script src="javascripts/flipclock.min.js"></script>
+    <script src="javascripts/timer.js"></script>
+    </body>
+</html>
