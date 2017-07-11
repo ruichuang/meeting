@@ -3,7 +3,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var bodyParser = require('body-parser');
 
-var server = app.listen(3000);
+var server = app.listen(process.env.PORT || 5000)
 var io = require('socket.io').listen(server);
 
 app.use("/javascripts", express.static(__dirname + '/javascripts'));
