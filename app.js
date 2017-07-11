@@ -1,8 +1,10 @@
 var express = require('express');
 var app = require('express')();
 var http = require('http').Server(app);
-var io = require('socket.io')(http);
 var bodyParser = require('body-parser');
+
+var server = app.listen(3000);
+var io = require('socket.io').listen(server);
 
 app.use("/javascripts", express.static(__dirname + '/javascripts'));
 app.use("/css", express.static(__dirname + '/css'));
@@ -48,7 +50,13 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
 });
+
+
+
     

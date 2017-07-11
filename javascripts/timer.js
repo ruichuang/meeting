@@ -1,4 +1,7 @@
-var socket = io.connect('http://localhost:3000');
+var origin = window.location.origin;
+var socket = io.connect(origin);
+
+// var socket = io.connect('http://localhost:3000');
 
 $(document).ready(function() {
     $("#alertWindow").hide();
