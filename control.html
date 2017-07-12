@@ -8,6 +8,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
         <link rel="stylesheet" href="css/control.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <script src="https://use.fontawesome.com/c19e88a826.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
@@ -17,10 +18,12 @@
             <div id="timer">
                 <div class="mini-clock">
                     <h3 id="timeTitle">Set Time</h3>
-                    <input type="number" name="hr" value="00" id="hour"/>
-                    <label for="id1">Hours</label>
-                    <input type="number" name="min" value="00" id="min"/>
-                    <label for="id1">Mins</label>
+                    <label for="id1">Start Time: </label>
+                    <input type="time" name="hr" value="12:00" id="hour"/>
+                    <br>
+                    <label for="id1">End Time: </label>
+                    <input type="time" name="min" value="12:00" id="min"/>
+                    
                 </div>
             </div>
             <div id="agenda">
@@ -28,8 +31,8 @@
             </div>
         </div>
         <div id="bottom">
-            <button type="button" id="slow" class="shadow slow">Too Slow</button>
-            <button type="button" id="sent" class="shadow slow"><i class="fa fa-check fa-2x" aria-hidden="true"></i></button>
+            <button type="button" id="slow" class="shadow slow button-3d ">Too Slow</button>
+            <button type="button" id="sent" class="shadow slow button-3d "><i class="fa fa-check fa-2x" aria-hidden="true"></i></button>
         </div>
     
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>

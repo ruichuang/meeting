@@ -19,6 +19,8 @@ $(document).ready(function() {
         }
     });
 
+    
+
     var elements = document.querySelectorAll("#inputAgenda, #hour, #min");
     for (var i = 0; i < elements.length; i++) {
         $(elements[i]).on("change keyup paste", function() {
@@ -35,13 +37,23 @@ $(document).ready(function() {
 
 $("#sent").click(function(){
     
-    var hr = document.getElementById('hour').value;
-    var min = document.getElementById('min').value;
+    var start = document.getElementById('hour').value;
+    var end = document.getElementById('min').value;
     var agenda = document.getElementById('inputAgenda').value;
 
-    console.log(hr + min + agenda);
+    console.log(start + end + agenda);
+    var startH = start.substring(0,1);
+    var endH = end.substring(0,1);
+    var h = (parseInt(end) - parseInt(start)) * 3600;
 
-    var newTime = parseInt(min) * 60 + parseInt(hr) * 3600;
+    var startM = start.slice(-2);
+    var endM = end.slice(-2);
+    var m = (parseInt(startM) - parseInt(endM)) * 60;
+
+
+    var newTime = h + m;
+    console.log(newTime);
+
 
 
     $.post('agenda', { agenda: agenda}, 
